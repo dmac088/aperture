@@ -1,6 +1,7 @@
 #!/bin/bash
 
-docker run -d
+docker run -d \
+           --user 1000 \
            -p 3306:3306 \
            -e MYSQL_ROOT_PASSWORD=somewordpress \
            -e MYSQL_DATABASE=wordpress \
